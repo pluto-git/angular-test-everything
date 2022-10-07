@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* for responsive design */
+
+body {
+    /* fallback for Js load */
+    height: 100vh;
+    /* actual height for mobile browsers specially */
+    height: var(--doc-height);  
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

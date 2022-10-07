@@ -1,0 +1,25 @@
+<footer class="text-center" style="background-color: #0a4275;">
+    <!-- Grid container -->
+    <div class="container">
+        <!-- Section: CTA -->
+        <section class="py-2 pb-0">
+            <h6 class="menu">
+                <a [matTooltip]="'navbarComponent.goTo'" matTooltipClass="tooltipStyle"
+                    [routerLink]="dashboard">Dashboard</a>
+                <a [matTooltip]="'navbarComponent.goTo'" matTooltipClass="tooltipStyle" [routerLink]="about">About</a>
+                <a [matTooltip]="'navbarComponent.goTo'" matTooltipClass="tooltipStyle" [routerLink]="contact">Contact
+                    Us</a>
+            </h6>
+        </section>
+        <!-- Section: CTA -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright:
+        <a class="text-white" [matTooltip]="'navbarComponent.goToDashboard'" matTooltipClass="tooltipStyle"
+            [routerLink]="dashboard" style="text-decoration: none;">Draw0, Inc.</a>
+    </div>
+    <!-- Copyright -->
+</footer>

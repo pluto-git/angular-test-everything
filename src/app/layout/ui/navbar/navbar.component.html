@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand noselect" routerLink="/" [matTooltip]="'navbarComponent.goToDashboard'"
+      aria-label="Button that displays a Dashboard tooltip" matTooltipClass="tooltipStyle">
+      <img src="../../../../assets/icons/favicon.ico" height="32" alt="Draw0"> Angular-tests
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      (click)="isCollapsed = !isCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+          [matTooltip]="'navbarComponent.goTo'" matTooltipClass="tooltipStyle">
+          <a class="nav-link active" aria-current="page" [routerLink]="dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+          [matTooltip]="'navbarComponent.goTo'" matTooltipClass="tooltipStyle">
+          <a class="nav-link active" aria-current="page" [routerLink]="about">About</a>
+        </li>
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"
+          [matTooltip]="'navbarComponent.goTo'" matTooltipClass="tooltipStyle">
+          <a class="nav-link active" aria-current="page" [routerLink]="contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
